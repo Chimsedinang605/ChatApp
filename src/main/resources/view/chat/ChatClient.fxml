@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="pane" prefHeight="528.0" prefWidth="554.0" style="-fx-background-color: #FFCCCC;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <ScrollPane fx:id="scrollPain" layoutX="17.0" layoutY="61.0" prefHeight="406.0" prefWidth="520.0" style="-fx-background-color: #FFFFFF;">
+            <content>
+                <VBox fx:id="vBox" prefHeight="390.0" prefWidth="503.0" style="-fx-background-color: #FFFFFF;" />
+            </content>
+        </ScrollPane>
+        <TextField fx:id="txtMsg" layoutX="57.0" layoutY="481.0" onAction="#txtMsgOnAction" prefHeight="26.0" prefWidth="387.0" style="-fx-background-color: #FFFFFF;" />
+        <Button contentDisplay="GRAPHIC_ONLY" layoutX="494.0" layoutY="476.0" onAction="#sendButtonOnAction" prefHeight="26.0" prefWidth="29.0" style="-fx-background-color: #FFFFFF;">
+            <graphic>
+                <ImageView fitHeight="33.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../img/sendd.png" />
+                    </image>
+                </ImageView>
+            </graphic></Button>
+        <Text fill="#3366ff" layoutX="63.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="HonerChat" wrappingWidth="88.41015625">
+            <font>
+                <Font name="Baskerville Old Face" size="17.0" />
+            </font>
+        </Text>
+        <Text fx:id="txtLabel" fill="#3366ff" layoutX="248.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Client">
+            <font>
+                <Font name="Bell MT Bold" size="24.0" />
+            </font>
+        </Text>
+        <Button fx:id="emojiButton" contentDisplay="GRAPHIC_ONLY" layoutX="448.0" layoutY="476.0" prefHeight="34.0" prefWidth="37.0" style="-fx-background-color: #FFFFFF;">
+            <graphic>
+                <ImageView fitHeight="32.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../img/imojjj.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+        </Button>
+        <Button contentDisplay="GRAPHIC_ONLY" layoutX="17.0" layoutY="476.0" onAction="#attachedButtonOnAction" prefHeight="34.0" prefWidth="18.0" style="-fx-background-color: #FFFFFF;" text="Button">
+            <graphic>
+                <ImageView fitHeight="22.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../img/folder.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+        </Button>
+        <ImageView fitHeight="113.0" fitWidth="108.0" layoutX="-23.0" layoutY="-22.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../img/logo.png" />
+            </image>
+        </ImageView>
+    </children>
+</AnchorPane>
